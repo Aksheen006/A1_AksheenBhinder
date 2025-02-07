@@ -1,10 +1,12 @@
 package ca.sheridancollege.bhindeak.onlinebookstore.models;
 
+import org.springframework.stereotype.Component;
 import java.util.ArrayList;
 import java.util.List;
 
+@Component
 public class BookCartList {
-    private List<Book> cartBooks;
+    private final List<Book> cartBooks;
 
     public BookCartList() {
         cartBooks = new ArrayList<>();
@@ -17,4 +19,5 @@ public class BookCartList {
     public List<Book> getCartBooks() {
         return cartBooks;
     }
+
 }

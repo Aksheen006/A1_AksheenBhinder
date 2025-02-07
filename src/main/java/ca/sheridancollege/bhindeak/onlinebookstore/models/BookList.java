@@ -1,8 +1,10 @@
 package ca.sheridancollege.bhindeak.onlinebookstore.models;
 
+import org.springframework.stereotype.Component;
 import java.util.ArrayList;
 import java.util.List;
 
+@Component
 public class BookList {
     private List<Book> availableBooks;
 
@@ -25,5 +27,3 @@ public class BookList {
         return availableBooks;
     }
 }
-
-

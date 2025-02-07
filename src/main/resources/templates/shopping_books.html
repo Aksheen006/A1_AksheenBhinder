@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Shopping Cart</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffe6eb;
+            text-align: center;
+        }
+        h1 {
+            color: #d63384;
+        }
+        table {
+            width: 80%;
+            margin: auto;
+            border-collapse: collapse;
+            background-color: white;
+        }
+        th, td {
+            border: 1px solid #f4c2c2;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #ffb6c1;
+            color: white;
+        }
+        a {
+            display: inline-block;
+            margin: 20px;
+            text-decoration: none;
+            color: white;
+            background-color: #ff69b4;
+            padding: 10px 15px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+<h1>Shopping Cart</h1>
+<table>
+    <tr>
+        <th>ISBN</th>
+        <th>Title</th>
+        <th>Author</th>
+        <th>Price</th>
+    </tr>
+    <tr th:each="book : ${cart}">
+        <td th:text="${book.bookISBN}"></td>
+        <td th:text="${book.bookTitle}"></td>
+        <td th:text="${book.bookAuthor}"></td>
+        <td th:text="${book.bookPrice}"></td>
+    </tr>
+</table>
+<a href="/check_out">Proceed to Checkout</a>
+<a href="/available_books">Back to Books</a>
+</body>
+</html>

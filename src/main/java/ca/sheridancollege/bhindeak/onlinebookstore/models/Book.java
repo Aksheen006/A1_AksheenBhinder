@@ -1,29 +1,3 @@
-/*package ca.sheridancollege.bhindeak.onlinebookstore.models;
-
-import lombok.Getter;
-import lombok.Setter;
-
-@Setter
-@Getter
-public class Book {
-    // Getters and Setters
-    private String bookISBN;
-    private String bookTitle;
-    private String bookAuthor;
-    private Double bookPrice;
-
-    // Constructor
-    public Book(String bookISBN, String bookTitle, String bookAuthor, Double bookPrice) {
-        this.bookISBN = bookISBN;
-        this.bookTitle = bookTitle;
-        this.bookAuthor = bookAuthor;
-        this.bookPrice = bookPrice;
-    }
-
-
-}
-*/
-
 package ca.sheridancollege.bhindeak.onlinebookstore.models;
 
 public class Book {
